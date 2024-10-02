@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moorthy Cafe</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="loading"></div>
+    <div class="main-content">
+    
+    </div>
+    <div class="pop-up">
+        <div class="pop-up-parent"> <img src="img/popup.jpg" alt="IMG">
+            <div class="pop-up-remove">
+                <h1 ><i onclick="popoupRemove()"class='bx bx-x' style='color:#ffffff'></i></h1>
+            </div>
+        </div>
+
+    </div>
+    <section id="menu">
+        <header class="head">
+            <div class="logo">
+                <img src="img/rlogo (2).png" alt="Logo">
+                <h1>MOORTHY CAFE</h1>
+                <h2 class="mobile-menu" onclick="handleMenu()"><i class='bx bx-menu' style='color:#ffffff'></i></h2>
+            </div>
+
+
+            <nav>
+                <a href="#" onclick="handleMenuChange()">HOME</a>
+                <a href="#com" onclick="handleMenuChange()">COMBO</a>
+                <a href="#category" onclick="handleMenuChange()">MENU</a>
+                <a href="#contactus" onclick="handleMenuChange()">CONTACT</a>
+                <button class="login" onclick="handleMenuChange()">Login</button>
+            </nav>
+
+
+
+        </header>
+
+        <div class="slide">
+            <h2><span>` CASH ON DELIVERY `</span><span>` LOWEST PRICE `</span><span>` USER FRIENDLY `</span><span>` FREE
+                    DELIVERY `</span><span>` UP TO 30% OFF `</span></h2>
+        </div>
+
+        <div class="offer">
+            <img src="img/background.jpg" alt="offer">
+            <div class="slidefood">
+                <img src="img/pngegg.png" alt="Food" id="one">
+                <div class="off"><img src="img/off-removebg-preview.png" alt="Offer">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="category">
+        <div class="mainnonveg">
+            <h1>Non Veg Foods</h1>
+            <div class="nonveg">
+                <div><a href="#"><img src="img/b1.png" alt="food"></a>
+                    <h3>Biriyani</h3>
+                </div>
+                <div><a href="#"><img src="img/b2.png" alt="food"></a>
+                    <h3>Fish Fry</h3>
+                </div>
+                <div><a href="#"><img src="img/b3.png" alt="food"></a>
+                    <h3>Prawn Fry</h3>
+                </div>
+                <div><a href="#"><img src="img/b4.png" alt="food"></a>
+                    <h3>Chilli Chicken</h3>
+                </div>
+                <div><a href="#"><img src="img/b6.png" alt="food"></a>
+                    <h3>Fried Rice</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="mainveg">
+            <h1>Veg Foods</h1>
+            <div class="veg">
+                <div><a href="#"><img src="img/v1.png" alt="food"></a>
+                    <h3>Meals</h3>
+                </div>
+                <div><a href="#"><img src="img/v2.png" alt="food"></a>
+                    <h3>Veg Biriyani</h3>
+                </div>
+                <div><a href="#"><img src="img/v3.png" alt="food"></a>
+                    <h3>Aloo Gobi</h3>
+                </div>
+                <div><a href="#"><img src="img/v4.png" alt="food"></a>
+                    <h3>Channa Masala</h3>
+                </div>
+                <div><a href="#"><img src="img/v5.png" alt="food"></a>
+                    <h3>Rajma</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="maincombo" id="com">
+        <h1>Combo Offers</h1>
+        <div class="combo">
+            <div class="card">
+                <a href="#"><img src="img/card1.jpg" alt="Combo"></a>
+                <h3>Meals Combo</h3>
+                <div class="star">
+                    <h5><span><i class='bx bxs-star' style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#bbb7b7b7'></i></span></h5>
+                    <h6>231 ratings</h6>
+                </div>
+                <h4>$8 <del> $10</del></h4>
+                <p>A meal combo, also known as a combination meal, is a group of menu items sold together for a special
+                    price.</p>
+                <button class="cart-btn" onclick="handleCount(event)">Add to Cart</button>
+
+            </div>
+            <div class="card">
+                <a href="#"><img src="img/card2.jpg" alt="Combo"></a>
+                <h3>Biriyani Combo</h3>
+                <div class="star">
+                    <h5><span><i class='bx bxs-star' style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#bbb7b7b7'></i></span></h5>
+                    <h6>231 ratings</h6>
+                </div>
+                <h4>$14 <del> $20</del></h4>
+                <p>Biryani combos are a dish of rice and meat or vegetables that is layered and cooked with spices and
+                    herbs. </p>
+                <button class="cart-btn" onclick="handleCount(event)">Add to Cart</button>
+
+            </div>
+            <div class="card">
+                <a href="#"><img src="img/card4.jpg" alt="Combo"></a>
+                <h3>Pani Puri Combo</h3>
+                <div class="star">
+                    <h5><span><i class='bx bxs-star' style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span></h5>
+                    <h6>231 ratings</h6>
+                </div>
+                <h4>$3 <del> $6</del></h4>
+                <p>A pani puri combo typically includes pani puri, a street food, along with tamarind and mint paste.
+                </p>
+                <button class="cart-btn" onclick="handleCount(event)">Add to Cart</button>
+
+
+            </div>
+            <div class="card">
+                <a href="#"><img src="img/card5.jpg" alt="Combo"></a>
+                <h3>Burger Combo</h3>
+                <div class="star">
+                    <h5><span><i class='bx bxs-star' style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#bbb7b7b7'></i></span></h5>
+                    <h6>231 ratings</h6>
+                </div>
+                <h4>$11 <del> $15</del></h4>
+                <p>A burger combo is a meal that typically includes a burger, fries, and a drink.</p>
+                <button class="cart-btn" onclick="handleCount(event)">Add to Cart</button>
+
+
+            </div>
+            <div class="card">
+                <a href="#"><img src="img/card3.jpg" alt="Combo"></a>
+                <h3>Pizza Combo</h3>
+                <div class="star">
+                    <h5><span><i class='bx bxs-star' style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#bbb7b7b7'></i></span></h5>
+                    <h6>231 ratings</h6>
+                </div>
+                <h4>$13 <del> $18</del></h4>
+                <p>It's loaded with toppings including two kinds of meat, veggies, pizza sauce, cheese and plenty of
+                    flavor. </p>
+                <button class="cart-btn" onclick="handleCount(event)">Add to Cart</button>
+
+
+            </div>
+            <div class="card">
+                <a href="#"><img src="img/card6.jpg" alt="Combo"></a>
+                <h3>Fried Chicken Combo</h3>
+                <div class="star">
+                    <h5><span><i class='bx bxs-star' style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span><span><i class='bx bxs-star'
+                                style='color:#fea115'></i></span></h5>
+                    <h6>231 ratings</h6>
+                </div>
+                <h4>$10 <del> $17</del></h4>
+                <p>Fried chicken combos often include fried chicken with sides like fries or a dinner roll.</p>
+                <button class="cart-btn" onclick="handleCount(event)">Add to Cart</button>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mainpopular">
+        <h2>Popular Dishes</h2>
+        <div class="popular">
+            <div class="card2"><a href="#"><img src="img/p1.jpg" alt="Food"></a>
+                <h3>Up to 80% Off</h3>
+            </div>
+            <div class="card2"><a href="#"><img src="img/p2.png" alt="Food"></a>
+                <h3>Up to 80% Off</h3>
+            </div>
+            <div class="card2"><a href="#"><img src="img/p3.jpg" alt="Food"></a>
+                <h3>Up to 60% Off</h3>
+            </div>
+            <div class="card2"><a href="#"><img src="img/p4.jpg" alt="Food"></a>
+                <h3>Up to 60% Off</h3>
+            </div>
+            <div class="card2"><a href="#"><img src="img/p5.jpg" alt="Food"></a>
+                <h3>Up to 60% Off</h3>
+            </div>
+            <div class="card2"><a href="#"><img src="img/p7.jpeg" alt="Food"></a>
+                <h3>Up to 50% Off</h3>
+            </div>
+            <div class="card2"><a href="#"><img src="img/p8.avif" alt="Food"></a>
+                <h3>Up to 50% Off</h3>
+            </div>
+            <div class="card2" id="card2-last"><a href="#"><img src="img/pu.jpg" alt="Food"></a>
+                <h3>Up to 50% Off</h3>
+            </div>
+
+            <div class="mainso"><img src="img/so.jpeg" alt="SpacialOffer">
+                <h1>Click Here</h1>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <div class="addtocart">
+        <h5 class="count">0</h5>
+    </div>
+    <div class="atc">
+        <img src="img/carrd2-removebg-preview.png" alt="add to Card">
+    </div>
+    <footer id="contactus">
+        <div class="buttom">
+
+            <h1>Contact Us</h1>
+            <h1>Address</h1>
+            <h1>Branch</h1>
+            <div class="contact">
+
+                <h5><i class='bx bxl-gmail' style='color:#da0505'></i> moorthycafe@gmail.com</h5>
+                <h5><i class='bx bxs-phone' style='color:#03b31c'></i> 044-96869683</h5>
+                <h5><i class='bx bxl-facebook-circle' style='color:#036bb3'></i> facebook</h5>
+                <h5><i class='bx bxl-instagram-alt' style='color:#e0036a'></i> instagram</h5>
+            </div>
+            <div class="address">
+
+                <h5>No 813, 6th Floor, Nizara Bonanza,
+                    Mount Road, Chidambaram - 608001
+                    Bus Stand, Chidambaram.</h5>
+            </div>
+            <div class="branch">
+
+                <h5>Chidambaram</h5>
+                <h5>Cuddalore</h5>
+                <h5>Velachery</h5>
+                <h5>Dindigul</h5>
+            </div>
+        </div>
+        <div class="copyright">
+            <h6>Copyright © 2012 - 2024 TermsFeed®. All rights reserved.</h6>
+        </div>
+    </footer>
+
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>
